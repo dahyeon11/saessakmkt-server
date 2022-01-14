@@ -1,12 +1,12 @@
 {
   "name": "saessakmkt-server",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "saessakmkt.js",
   "scripts": {
     "start": "nodemon app.js",
     "prod-start": "SET NODE_ENV=production&&nodemon app.js",
     "prod-db-migration": "sequelize db:migrate --env production",
-    "server-start": "export NODE_ENV=production && authbind --deep pm2 start app.js"
+    "server-start": "export NODE_ENV=production && authbind --deep pm2 start saessakmkt.js"
   },
   "license": "MIT",
   "dependencies": {
